@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AiOutlineMenu,
   AiOutlineHome,
@@ -14,8 +14,23 @@ const Sidenav = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-    console.log("state changed");
   };
+
+  useEffect(() => {
+    const body = document.body;
+
+    // Add or remove the class based on the menu state
+    if (nav) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
+
+    // Cleanup: Remove the class when the component is unmounted
+    return () => {
+      body.classList.remove("no-scroll");
+    };
+  }, [nav]);
 
   return (
     <div>
@@ -44,11 +59,11 @@ const Sidenav = () => {
             <span className="pl-4">About me</span>
           </a>
           <a onClick={handleNav} href="#work" className="nav-link-style">
-            <GrProjects size={20} />
+            <AiOutlineProject size={20} />
             <span className="pl-4">Work</span>
           </a>
           <a onClick={handleNav} href="#projects" className="nav-link-style">
-            <AiOutlineProject size={20} />
+            <GrProjects size={20} />
             <span className="pl-4">Projects</span>
           </a>
           <a onClick={handleNav} href="#contact" className="nav-link-style">
@@ -69,10 +84,10 @@ const Sidenav = () => {
             <BsPerson size={20} />
           </a>
           <a href="#work" className="sidenav-link-style elem-3">
-            <GrProjects size={20} />
+            <AiOutlineProject size={20} />
           </a>
           <a href="#projects" className="sidenav-link-style elem-4">
-            <AiOutlineProject size={20} />
+            <GrProjects size={20} />
           </a>
           <a href="#contact" className="sidenav-link-style elem-5">
             <AiOutlineMail size={20} />

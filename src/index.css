@@ -6,6 +6,14 @@
   scroll-behavior: smooth;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 @layer components {
   .nav-link-style {
     @apply w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100/70 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-150;

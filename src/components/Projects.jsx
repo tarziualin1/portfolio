@@ -22,9 +22,14 @@ const Projects = () => {
         </strong>
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        <ProjectItem img={img1} title="Mountains" />
-        <ProjectItem img={img2} title="Turtle" />
-        <ProjectItem img={img3} title="Cat" />
+        <ProjectItem
+          img={img1}
+          title="Recipe App "
+          link="https://recipes-app-11.netlify.app"
+          description="A React and Tailwind CSS-powered recipe app utilizing the Spoonacular API"
+        />
+        <ProjectItem img={img2} title="Turtle" link="" />
+        <ProjectItem img={img3} title="Cat" link="" />
       </div>
     </div>
   );

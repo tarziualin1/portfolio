@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="py-2 font-medium">Name</label>
             <input
-              className="border-2 rounded-lg p-3 border-gray-300"
+              className="border border-gray-300 p-3 rounded-none shadow-md"
               type="text"
               name="name"
               required
@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="py-2 font-medium">Phone</label>
             <input
-              className="border-2 rounded-lg p-3 border-gray-300"
+              className="border border-gray-300 p-3 rounded-none shadow-md"
               type="text"
               name="phone"
             />
@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="flex flex-col pb-2">
           <label className="py-2 font-medium">Email</label>
           <input
-            className="border-2 rounded-lg p-3 border-gray-300"
+            className="border border-gray-300 p-3 rounded-none shadow-md"
             type="email"
             name="email"
             required
@@ -45,22 +45,22 @@ const Contact = () => {
         <div className="flex flex-col pb-2">
           <label className="py-2 font-medium">Subject</label>
           <input
-            className="border-2 rounded-lg p-3 border-gray-300"
+            className="border border-gray-300 p-3 rounded-none shadow-md"
             type="text"
             name="subject"
             required
           />
         </div>
         <div className="flex flex-col pb-2">
-          <label className=" py-2 font-medium">Message</label>
+          <label className="py-2 font-medium">Message</label>
           <textarea
-            className="border-2 rounded-lg p-3 border-gray-300 h-24 md:h-36"
+            className="border border-gray-300 p-3 h-24 md:h-36 rounded-none shadow-md"
             name="message"
             rows="10"
             required
           ></textarea>
         </div>
-        <button className="bg-gradient-to-br from-gray-600 to-gray-900 text-white w-full mt-4 p-4 rounded-xl  hover:shadow-xl transition-shadow duration-300">
+        <button className="bg-customOlive/90 text-white w-full mt-4 p-4 rounded-xl hover:shadow-xl hover:scale-105 duration-300 shadow-md">
           Send Message
         </button>
       </form>

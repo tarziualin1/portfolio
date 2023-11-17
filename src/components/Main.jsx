@@ -53,7 +53,7 @@ const Main = () => {
               alt="Tarziu Alin Image"
               className="rounded-full h-64 w-64 object-cover xl:self-start relative z-40"
             />
-            <div className="absolute h-64 w-64 inset-0 bg-black/30  z-50 rounded-full"></div>
+            <div className="absolute h-64 w-64 inset-0 bg-black/20  z-50 rounded-full"></div>
             <div className="absolute h-64 w-64 inset-0 bg-black blur-xl z-30 rounded-full"></div>
           </div>
         </div>
