@@ -2,6 +2,9 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import img6 from "../assets/img7.jpg";
+import { RiFileDownloadLine } from "react-icons/ri";
+import cv from "../assets/cv.pdf";
+import { Tooltip } from "react-tooltip";
 
 const Main = () => {
   return (
@@ -35,7 +38,7 @@ const Main = () => {
                   style={{ fontSize: "1em", paddingLeft: "8px" }}
                 />
               </h2>
-              <div className="flex justify-between pt-6 max-w-[70px] w-full">
+              <div className="flex justify-between pt-6 max-w-[120px] w-full">
                 <a
                   href="https://github.com/tarziualin1"
                   target="_blank"
@@ -56,6 +59,21 @@ const Main = () => {
                     size={25}
                   />
                 </a>
+                <a
+                  href={cv}
+                  without
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="animate-bounce transition-all hover:animate-none"
+                >
+                  <RiFileDownloadLine
+                    className="cursor-pointer text-white/70 hover:scale-125 ease-in duration-100 cv"
+                    size={25}
+                  />
+                </a>
+                <Tooltip anchorSelect=".cv" place="right">
+                  View CV
+                </Tooltip>
               </div>
             </div>
           </div>

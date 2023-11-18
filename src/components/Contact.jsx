@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="py-2 font-medium">Name</label>
             <input
-              className="border border-gray-300 p-3 rounded-none shadow-md"
+              className="border-none p-3 rounded-full shadow-md"
               type="text"
               name="name"
               required
@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="py-2 font-medium">Phone</label>
             <input
-              className="border border-gray-300 p-3 rounded-none shadow-md"
+              className="border-none p-3 rounded-full shadow-md"
               type="text"
               name="phone"
             />
@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="flex flex-col pb-2">
           <label className="py-2 font-medium">Email</label>
           <input
-            className="border border-gray-300 p-3 rounded-none shadow-md"
+            className="border-none p-3 rounded-full shadow-md"
             type="email"
             name="email"
             required
@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="flex flex-col pb-2">
           <label className="py-2 font-medium">Subject</label>
           <input
-            className="border border-gray-300 p-3 rounded-none shadow-md"
+            className="border-none p-3 rounded-full shadow-md"
             type="text"
             name="subject"
             required
@@ -54,7 +54,7 @@ const Contact = () => {
         <div className="flex flex-col pb-2">
           <label className="py-2 font-medium">Message</label>
           <textarea
-            className="border border-gray-300 p-3 h-24 md:h-36 rounded-none shadow-md"
+            className="border-none p-3 h-24 md:h-36 rounded-xl shadow-md"
             name="message"
             rows="10"
             required
