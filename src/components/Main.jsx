@@ -36,14 +36,26 @@ const Main = () => {
                 />
               </h2>
               <div className="flex justify-between pt-6 max-w-[70px] w-full">
-                <FaGithub
-                  className="cursor-pointer text-white/70 hover:scale-125 ease-in duration-100"
-                  size={25}
-                />
-                <FaLinkedinIn
-                  className="cursor-pointer text-white/70 hover:scale-125 ease-in duration-100"
-                  size={25}
-                />
+                <a
+                  href="https://github.com/tarziualin1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub
+                    className="cursor-pointer text-white/70 hover:scale-125 ease-in duration-100"
+                    size={25}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/alin-tarziu-68a069242/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn
+                    className="cursor-pointer text-white/70 hover:scale-125 ease-in duration-100"
+                    size={25}
+                  />
+                </a>
               </div>
             </div>
           </div>

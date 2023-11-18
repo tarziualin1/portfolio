@@ -18,18 +18,31 @@ const Projects = () => {
         experiences. Explore my projects to see my proficiency in responsive
         design, intuitive interfaces, and modern technologies like: <br />
         <strong>
-          HTML, CSS, JavaScript, React, Framer Motion, TailwindCSS, Figma
+          HTML, CSS, JavaScript, React, Framer Motion, TailwindCSS
         </strong>
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <ProjectItem
           img={img1}
           title="Recipe App "
-          link="https://recipes-app-11.netlify.app"
-          description="A React and Tailwind CSS-powered recipe app utilizing the Spoonacular API"
+          linkCode="https://github.com/tarziualin1/recipes-app"
+          linkApp="https://recipes-app-11.netlify.app"
+          description="Developed using React, Styled components, Framer Motion and the Spoonacular API"
         />
-        <ProjectItem img={img2} title="Turtle" link="" />
-        <ProjectItem img={img3} title="Cat" link="" />
+        <ProjectItem
+          img={img2}
+          title="Shop App"
+          linkCode="https://github.com/tarziualin1/Nike"
+          linkApp="https://tarziu-alin-shoes.netlify.app/"
+          description="Front-end app developed with Vite using React and TailwindCSS"
+        />
+        <ProjectItem
+          img={img3}
+          title="Travel App"
+          linkCode="https://github.com/tarziualin1/travel"
+          linkApp="https://tarziu-alin-travel.netlify.app/"
+          description="Front-end app developed with Vite using NextJS and TailwindCSS"
+        />
       </div>
     </div>
   );
